@@ -1,0 +1,145 @@
+.nav {
+    position: relative;
+    width: 80%;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    align-content: center;
+    margin-top: 15px;
+}
+
+.nav-align-center {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 28vw;
+    color: #34313D;
+    fill: #34313D;
+}
+
+
+.icon-list {
+    width: 8vw;
+    cursor: pointer;
+}
+
+.nav-item {
+    display: none;
+    cursor: pointer;
+    margin-left: 2vw;
+    font-size: 1vw;
+    transition: color 500ms ease;
+}
+
+.nav-item:hover {
+    color: black;
+}
+
+.signup {
+    width: 70%;
+    cursor: pointer;
+    color: white;
+    text-align: center;
+    background-color: var(--cyan);
+    margin: 7vw auto;
+    font-size: 4vw;
+    padding: 10px 0px;
+    border-radius: 25px;
+    transition: background-color 500ms ease;
+}
+
+.signup:hover {
+    background-color: hsl(179, 56.9%, 74.5%);
+}
+
+.dropdown {
+    display: none;
+    width: 100%;
+    position: absolute;
+    top: 11vw;
+    background-color: var(--darkViolet);
+    border-radius: 3vw;
+    padding: 3vw 0vw;
+}
+
+.dropdown-item {
+    color: white;
+    text-align: center;
+    font-size: 4.5vw;
+    margin-top: 7vw;
+}
+
+.dropdown-devider {
+    width: 70%;
+    margin-top: 7vw;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: 1px solid var(--grayishViolet);
+}
+
+.show {
+    display: grid;
+}
+
+.signup-md {
+    display: none;
+    cursor: pointer;
+    color: white;
+    background-color: var(--cyan);
+    margin-left: 2vw;
+    font-size: 1vw;
+    padding: 4px 12px;
+    border-radius: 15px;
+    transition: background-color 500ms ease;
+}
+
+.signup-md:hover {
+    background-color: hsl(179, 56.9%, 74.5%);
+}
+
+@media (min-width: 375px) {
+    .icon-list {
+        width: 30px;
+    }
+    .logo {
+        width: 105px;
+    }
+    .dropdown {
+        top: 41.25px;
+        border-radius: 20p;
+        padding: 11.25px 0vw;
+    }
+    .dropdown-item {
+        font-size: 16.875px;
+        margin-top: 26.25px;
+    }
+    .signup {
+        font-size: 15px;
+        margin: 26.25px auto;
+    }
+    .dropdown-devider {
+        margin-top: 26.25px;
+    }
+    
+}
+
+@media (min-width: 768px) {
+    .icon-list {
+        display: none;
+    }
+    .logo {
+        width: 7vw;
+    }
+    .nav-item {
+        display: block;
+    }
+    .signup-md {
+        display: block;
+    }
+    .dropdown {
+        display: none;
+    }
+}
+

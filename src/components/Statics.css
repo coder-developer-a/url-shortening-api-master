@@ -1,0 +1,187 @@
+.statics {
+    width: 100%;
+    background-color: hsl(230, 25%, 95.3%);
+    padding: 20vw 0px;
+}
+
+.statics-text {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+
+.statics-title {
+    font-size: 7.5vw;
+}
+
+.statics-description {
+    margin-top: 4vw;
+    font-size: 4.3vw;
+}
+
+.statics-items {
+    width: 80%;
+    margin-top: 23vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.statics-item {
+    background-color: white;
+    border-radius: 5px;
+}
+
+.item-image-container {
+    width: 18vw;
+    height: 18vw;
+    margin: auto;
+    transform: translateY(-50%);
+    background-color: var(--veryDarkBlue);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-image {
+    width: 10vw;
+}
+
+.item-text {
+    margin: 0px auto;
+    text-align: center;
+}
+
+.statics-item-title {
+    font-size: 5.5vw;
+}
+
+.item-description {
+    width: 81%;
+    margin-top: 4vw;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 3.7vw;
+    padding-bottom: 10vw;
+    text-align: center;
+}
+
+
+.connector {
+    width: 1.5vw;
+    height: 19vw;
+    background-color: var(--cyan);
+    margin: auto;
+}
+
+
+
+
+@media (min-width: 375px) {
+    .statics {
+        padding: 75px 0px;
+    }
+    .statics-title {
+        font-size: 28.125px;
+    }
+    .statics-description {
+        margin-top: 15px;
+        font-size: 16.125px;
+    }
+    .statics-items {
+        margin-top: 86.25px;
+    }
+    
+    .item-image-container {
+        width: 67.5px;
+        height: 67.5px;
+    }
+    
+    .item-image {
+        width: 37.5px;
+    }
+    
+    .statics-item-title {
+        font-size: 20.625px;
+    }
+    
+    .item-description {
+        margin-top: 15px;
+        font-size: 13.875px;
+        padding-bottom: 37.5px;
+    }
+    .connector {
+        width: 5.625px;
+        height: 71.25px;
+    }
+}
+
+@media (min-width: 768px) {
+    .statics {
+        padding: 7vw 0px;
+    }
+    .statics-title {
+        font-size: 3.4vw;
+    }
+    .statics-description {
+        width: 55%;
+        margin: auto;
+        margin-top: 0px;
+        font-size: 1.5vw;
+    }
+    .statics-items {
+        height: 25vw;
+        margin-top: 7vw;
+        display: grid;
+        grid-template-columns: 30% 3.5% 30% 3.5% 30%;
+    }   
+    
+    .statics-item {
+        height: 20vw;
+    }
+    
+    .item-image-container {
+        width: 6.3vw;
+        height: 6.3vw;
+        margin-left: 10%;
+    }
+    
+    .item-image {
+        width: 3.5vw;
+    }
+    
+    .item-text {
+        text-align: start;
+    }
+    
+    .statics-item-title {
+        font-size: 1.5vw;
+        width: 80%;
+        margin: auto;
+    }
+    
+    .item-description {
+        width: 80%;
+        margin-top: 1vw;
+        font-size: 1vw;
+        padding-bottom: 0vw;
+        text-align: start;
+    }
+    
+    
+    .connector {
+        width: 100%;
+        height: 0.5vw;
+        margin-top: 11vw;
+        margin-bottom: unset;
+    }
+    .align-start {
+        align-self: flex-start;
+    }
+    .align-center {
+        align-self: center;
+    }
+    .align-end {
+        align-self: flex-end;
+    }
+}

@@ -1,0 +1,142 @@
+.footer {
+    width: 100%;
+    background-color: var(--veryDarkViolet);
+    display: grid;
+    grid-template-columns: 100%;
+}
+
+.footer-logo-container {
+    width: 28vw;
+    margin: 12.5vw auto;
+}
+
+.footer-logo path{
+    fill: white;
+    cursor: pointer;
+}
+
+.footer-items {
+    
+}
+
+
+.item {
+    margin-bottom: 11vw;
+}
+
+.footer-item-title {
+    color: white;
+    margin-bottom: 3.5vw;
+    font-size: 4vw;
+    text-align: center;
+}
+
+.item-item {
+    margin-top: 2vw;
+    font-size: 3vw;
+    cursor: pointer;
+    transition: color 500ms ease;
+    text-align: center;
+}
+
+.item-item:hover {
+    color: var(--cyan);
+}
+
+
+
+.footer-linkto {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 12vw;
+    text-align: center;
+}
+
+.linkto-container {
+    width: 5vw;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.linkto-item path{
+    transition: fill 500ms ease;
+}
+
+.linkto-item:hover path{
+    fill: hsl(180, 66%, 49%);
+}
+
+
+
+@media (min-width: 375px) {
+    .footer-logo-container {
+        width: 105px;
+        margin: 46.875px auto;
+    }
+    .item {
+        margin-bottom: 41.25px;
+    }
+    .footer-item-title {
+        margin-bottom: 13.125px;
+        font-size: 15px;
+    }
+    .item-item {
+        margin-top: 7.5px;
+        font-size: 11.25px;
+    }
+    .footer-linkto {
+        margin-bottom: 45px;
+    }
+    .linkto-container {
+        width: 18.75px;
+    }
+}
+
+@media (min-width: 768px) {
+    .footer {
+        grid-template-columns: 40% 40% 20%;
+    }
+    .footer-logo-container {
+        width: 8vw;
+        height: 2.3vw;
+        margin-top: 3vw;
+    }
+    .footer-logo {
+        position: relative;
+    }
+    .footer-items {
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+    .item {
+        margin-top: 3vw;
+        margin-bottom: 5vw;
+    }
+    .footer-item-title {
+        margin-bottom: 0.75vw;
+        font-size: 1vw;
+        text-align: start;
+    }
+    .item-item {
+        margin-top: 0.5vw;
+        font-size: 0.75vw;
+        text-align: start;
+    }
+    .footer-linkto {
+        width: 50%;
+        margin-left: 0px;
+        margin-top: 3vw;
+        margin-bottom: unset;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        text-align: start;
+    }
+    .linkto-container {
+        width: 1.5vw;
+    }    
+}

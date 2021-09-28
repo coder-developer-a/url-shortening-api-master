@@ -1,0 +1,146 @@
+.shorten-container {
+    background: linear-gradient(to bottom, 
+    white 0%,
+    white 50%,
+    hsl(230, 25%, 95.3%) 50%,
+    hsl(230, 25%, 95.3%) 100%   
+    );
+}
+
+
+.shorten {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    background-image: url("./assets/bg-shorten-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color:  var(--darkViolet);
+    background-position: top right ;
+    border-radius: 10px;
+    padding: 7vw 0px;
+}
+
+.shorten-input {
+    width: 80%;
+    text-indent: 2vw;
+    font-size: 4vw;
+    border-radius: 5px;
+    height: 12vw;
+    border: none;
+    order: 1;
+}
+
+.shorten-input:focus {
+    outline: none;
+}
+
+.shorten-button {
+    cursor: pointer;
+    width: 80%;
+    margin-top: 5vw;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 4.5vw;
+    height: 12vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    color: white;
+    background-color: var(--cyan);
+    order: 3;
+    transition: background-color 500ms ease;
+}
+
+.shorten-button:hover {
+    background-color: hsl(179, 56.9%, 74.5%);
+}
+
+.shorten-invalid-input-border {
+    border: 2px solid var(--red);
+}
+
+.shorten-invalid-input {
+    width: 80%;
+    margin: auto;
+    display: none;
+    margin-top: 1.5vw;
+    font-size: 3vw;
+    font-style: italic;
+    color: var(--red);
+    text-align: start;
+    order: 2;
+}
+
+.show-invalid {
+    display: block;
+}
+
+.hide-invalid {
+    display: none;
+}
+
+
+
+@media (min-width: 375px) {
+    .shorten {
+        padding: 26.25px 0px;
+    }
+    .shorten-input {
+        text-indent: 7.5px;
+        font-size: 15px;
+        height: 45px;
+    }
+    .shorten-button {
+        font-size: 16.875px;
+        height: 45px;
+        margin-top: 18.75px;
+        padding: 1px 0px;
+    }
+    .shorten-invalid-input {
+        margin-top: 5.625px;
+        font-size: 11.25px;
+    }
+}
+
+@media (min-width: 768px) {
+    .shorten-container {
+        padding-bottom: 0.5vw;
+    }
+    .shorten {
+        background-image: url('./assets/bg-shorten-desktop.svg');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: 60% 0%;
+        display: grid;
+        grid-template-columns: 75% 15%;
+        justify-content: center;
+        padding: 3vw 0px;
+        position: relative;
+    }
+    .shorten-input {
+        width: 96%;
+        height: 4vw;
+        font-size: 1.3vw;
+        margin: 0px;
+        order: 1;
+    }
+    .shorten-button {
+        width: 100%;
+        height: 4vw;
+        font-size: 1.5vw;
+        padding: 1px 0px;
+        margin-top: 0px;
+        order: 2;
+    }
+    .shorten-invalid-input {
+        width: 100%;
+        margin-top: 0.5vw;
+        font-size: 1vw;
+        order: 3;
+        position: absolute;
+        left: 5%;
+        bottom: 8%;
+    }
+}

@@ -1,0 +1,95 @@
+.shortened-container {
+    background-color: hsl(230, 25%, 95.3%);
+    padding-top: 4vw;
+}
+
+.shortened {
+    width: 80%;
+    margin: auto;
+    border-radius: 3px;
+    padding-bottom: 2.5vw;
+    background-color: white;
+}
+
+.shortened-text {
+    width: 90%;
+    margin: auto;
+    font-size: 4.2vw;
+    padding: 2.5vw 0px;
+}
+
+.shorteneddevider {
+    width: 100%;
+    margin: auto;
+    border-top: 1px solid var(--grayishViolet);
+}
+
+.shortened-button {
+    width: 90%;
+    margin: auto;
+    color: white;
+    text-align: center;
+    font-size: 4vw;
+    background-color: var(--cyan);
+    border-radius: 4px;
+    padding: 8.75px 0px;
+    cursor: pointer;
+    transition: background-color 500ms ease;
+}
+
+.shortened-button:hover {
+    background-color: hsl(179, 56.9%, 74.5%);
+}
+
+.shortened-button-copied {
+    background-color: var(--darkViolet);
+    cursor: unset;
+}
+
+.shortened-button-copied:hover {
+    background-color: var(--darkViolet);
+}
+
+@media (min-width: 375px) {
+    .shortened-container {
+        padding-top: 15px;
+    }
+    .shortened {
+        padding-bottom: 9.375px;
+    }
+    .shortened-text {
+        padding: 9.375px 0px;
+        font-size: 15.75px;
+    }
+    .shortened-button {
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 768px) {
+    .shortened-container {
+        padding-top: 1.5vw;
+    }
+    .shortened-devider {
+        display: none;
+    }
+    .shortened {
+        padding: 1vw 0px;
+        display: grid;
+        grid-template-columns: 60% 25% 10%;
+        justify-content: center;
+        align-items: center;
+    }
+    .shortened-text {
+        font-size: 1.4vw;
+        padding: unset;
+        margin: unset;
+    }
+
+    .shortened-button {
+        width: 100%;
+        padding: 5px 0px;
+        font-size: 1.3vw;
+        margin: unset;
+    }
+}
