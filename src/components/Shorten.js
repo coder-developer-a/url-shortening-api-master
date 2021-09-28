@@ -31,6 +31,7 @@ const Shorten = () => {
                 }, (error) => {
                     document.getElementById('shortenInput').classList.add('shorten-invalid-input-border')
                     document.getElementById('invalidInput').classList.add('show-invalid')
+                    console.log('1')
                 })
         }
         if (inputLink !== 'firstRender') {
