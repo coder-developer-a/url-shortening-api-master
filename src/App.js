@@ -1,5 +1,6 @@
 import React from 'react';
 import { HashRouter } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 import './App.css';
 import Nav from './components/Nav';
 import Info from './components/Info';
@@ -12,14 +13,14 @@ import Footer from './components/Footer';
 function App() {
   return (
     <div className="app">
-      <HashRouter basename={process.env.PUBLIC_URL}>
+      <Router basename={process.env.PUBLIC_URL}>
         <Nav />
         <Info />
         <Shorten />
         <Statics />
         <Boost />
         <Footer />
-      </HashRouter>
+      </Router>
     </div>
   );
 }
