@@ -2,7 +2,7 @@
   "name": "url-shortening-api-master",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://myusername.github.io/url-shortening-api-master",
+  "homepage": "https://coder-developer-a.github.io/url-shortening-api-master",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
