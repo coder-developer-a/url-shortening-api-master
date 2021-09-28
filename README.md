@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/responsive-design-reactjs-api-K-5L_lfSk](https://www.frontendmentor.io/solutions/responsive-design-reactjs-api-K-5L_lfSk)
+- Live Site URL: [https://coder-developer-a.github.io/url-shortening-api-master](https://coder-developer-a.github.io/url-shortening-api-master)
 
 ## My process
 
